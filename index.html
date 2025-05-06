@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Auren – Creative Technologist</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ishaan Sunkuru – Industrial Engineering Intern</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #0f1117;
-      --text: #e4e4e4;
+      --bg: #0d1117;
+      --text: #eaeaea;
       --accent: #00ffe0;
       --font: 'Space Grotesk', sans-serif;
     }
 
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      background: var(--bg);
-      color: var(--text);
       font-family: var(--font);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
       padding: 2rem;
-      max-width: 800px;
-      margin-inline: auto;
     }
 
     h1, h2 {
@@ -28,109 +32,146 @@
       margin-bottom: 0.5rem;
     }
 
+    section {
+      margin-bottom: 4rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: none;
+    }
+
     a {
       color: var(--accent);
       text-decoration: none;
-      transition: all 0.2s ease;
     }
 
     a:hover {
-      text-shadow: 0 0 5px var(--accent);
+      text-shadow: 0 0 6px var(--accent);
     }
 
-    header {
+    .header {
       text-align: center;
-      margin-bottom: 3rem;
+      margin-top: 2rem;
     }
 
     .title {
-      font-size: 2.8rem;
+      font-size: 2.5rem;
+      font-weight: 600;
       margin: 0;
-      letter-spacing: -0.5px;
     }
 
     .subtitle {
-      font-size: 1.1rem;
-      color: #aaa;
-      margin-top: 0.5rem;
+      color: #999;
+      font-size: 1rem;
+      margin-bottom: 1rem;
     }
 
-    .section {
-      margin-bottom: 2.5rem;
-    }
-
-    .project {
-      margin-bottom: 1.5rem;
-    }
-
-    .project a {
-      font-weight: 600;
-    }
-
-    .contact {
+    .contact a {
+      margin: 0 0.5rem;
       font-size: 0.95rem;
-      color: #888;
+    }
+
+    ul {
+      padding-left: 1.2rem;
     }
 
     footer {
       text-align: center;
-      font-size: 0.9rem;
       margin-top: 3rem;
+      font-size: 0.8rem;
       color: #555;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.5rem 1.2rem;
+      background: var(--accent);
+      color: #000;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .button:hover {
+      background: #00cbbf;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1 class="title">Auren</h1>
-    <p class="subtitle">Creative Technologist & Systems Thinker</p>
-    <p class="contact">
-      📍 Rotterdam · ✉️ <a href="mailto:auren@email.com">auren@email.com</a> · 
-      <a href="https://linkedin.com/in/auren">LinkedIn</a> · 
-      <a href="https://github.com/auren">GitHub</a>
-    </p>
+  <header class="header">
+    <h1 class="title">Ishaan Sunkuru</h1>
+    <p class="subtitle">Industrial Engineering Student · Systems Thinker · Data-Driven Optimizer</p>
+    <div class="contact">
+      📍 Netherlands · ✉️ <a href="mailto:ishaan@email.com">ishaan@email.com</a>
+      · <a href="https://linkedin.com/in/ishaan">LinkedIn</a>
+      · <a href="https://github.com/ishaan">GitHub</a>
+    </div>
   </header>
 
-  <section class="section">
-    <h2>About Me</h2>
-    <p>
-      I'm an interdisciplinary engineer and musician focused on building intelligent creative systems. 
-      From generative sequencers to adaptive lighting installations, I design tools that bridge logic and aesthetics.
-    </p>
-  </section>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a data-driven industrial engineering student passionate about using technology to improve systems, reduce waste, and optimize performance. 
+        I thrive at the intersection of engineering and analytics, where structured thinking meets creative problem-solving.
+      </p>
+    </section>
 
-  <section class="section">
-    <h2>Projects</h2>
-    <div class="project">
-      <a href="https://github.com/auren/turing127">Turing-127</a><br>
-      Real-time generative MIDI sequencer for Ableton. Deep modulation, performance layers, Push support.
-    </div>
-    <div class="project">
-      <a href="#">DreamComposer</a><br>
-      Lucid dreaming audio system translating dream-state patterns into ambient compositions.
-    </div>
-    <div class="project">
-      <a href="#">TreeFocus</a><br>
-      Projected tree animations for lecture halls that grow in sync with attention, using EEG data and gesture tracking.
-    </div>
-  </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <p><strong>Shift – Founder & Developer</strong><br>
+      Designing performance tools like Eno, a generative MIDI sequencer, and adaptive lighting installations that enhance focus and engagement.</p>
 
-  <section class="section">
-    <h2>Experience</h2>
-    <p><strong>Creative Systems Intern — XYZ Studio</strong><br>
-    Summer 2024 · Built visual synthesizers and generative design tools.</p>
+      <p><strong>Data Science Research Project</strong><br>
+      Worked on analytics pipelines to extract actionable insights from unstructured operational data using Python and Pandas.</p>
+    </section>
 
-    <p><strong>Researcher — TU Delft</strong><br>
-    Developed neural-guided generative systems for creative AI applications.</p>
-  </section>
+    <section id="education">
+      <h2>Education</h2>
+      <p><strong>Bachelor of Science – Industrial Engineering</strong><br>
+      Delft University of Technology · 2021 – Present</p>
+      <ul>
+        <li>Smart Manufacturing Processes</li>
+        <li>Data-Driven Decision Making</li>
+        <li>Technology Forecasting</li>
+      </ul>
+    </section>
 
-  <section class="section">
-    <h2>Resume</h2>
-    <p><a href="CV general.pdf" target="_blank">Download PDF</a></p>
-  </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming: Python, JavaScript, MATLAB</li>
+        <li>Data Analysis: Pandas, Excel, PowerBI</li>
+        <li>Process Improvement: Lean, Six Sigma, Value Stream Mapping</li>
+        <li>Creative Tech: Max/MSP, Ableton Live, generative systems</li>
+      </ul>
+    </section>
+
+    <section id="resume">
+      <h2>Resume</h2>
+      <a class="button" href="CV general.pdf" target="_blank">Download PDF</a>
+    </section>
+  </main>
 
   <footer>
-    &copy; 2025 Auren. Made with logic + rhythm.
+    &copy; 2025 Ishaan Sunkuru. Built with curiosity and care.
   </footer>
+
+  <script>
+    // Scroll reveal animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach(section => {
+      observer.observe(section);
+    });
+  </script>
 </body>
 </html>
